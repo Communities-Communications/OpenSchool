@@ -20,12 +20,23 @@
 #/#############################################################################
 from openerp.osv import osv, fields
 
+class op_areaformacao(osv.osv):
+    _name = 'op.areaformacao'
+
+    _columns = {
+            'name': fields.char(size=32, string='Name', required=True),
+            'code': fields.char(size=8, string='Code', required=True),
+    }
+
+op_areaformacao()
+
 class op_course(osv.osv):
     _name = 'op.course'
 
     _columns = {
             'name': fields.char(size=32, string='Name', required=True),
             'code': fields.char(size=8, string='Code', required=True),
+            'areaformacao_id': fields.many2one('op.areaformacao', 'Training area'),
             'section': fields.char(size=32, string='Section', required=True),
             'evaluation_type': fields.selection([('normal','Normal'),('GPA','GPA'),('CWA','CWA'),('CCE','CCE')], string='Evaluation Type', required=True),
             'payment_term': fields.many2one('account.payment.term', 'Payment Term'),

@@ -9,6 +9,7 @@
 				<tree string="Subject">
 					<field name="name" />
 					<field name="code" />
+					<field name="componente" />
 <!-- 					<field name="course_id" /> -->
 <!-- 					<field name="grade_waitage" /> -->
 					<field name="type" />
@@ -26,6 +27,7 @@
 						<group colspan="4">
 							<field name="name" />
 							<field name="code" />
+							<field name="componente" />
 <!-- 							<field name="course_id" /> -->
 <!-- 							<field name="grade_waitage" /> -->
 							<field name="type" />

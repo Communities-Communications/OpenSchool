@@ -10,6 +10,7 @@
 					<field name="name" />
 					<field name="code" />
 					<field name="section" />
+ 					<field name="areaformacao_id" />
 					<field name="evaluation_type" />
 					<field name="payment_term" />
 					<field name="subject_ids" />
@@ -28,6 +29,7 @@
 							<field name="name" />
 							<field name="code" />
  							<field name="section" />
+ 							<field name="areaformacao_id" />
 							<field name="evaluation_type" />
 						</group>
 						<group colspan="4">

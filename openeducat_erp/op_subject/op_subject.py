@@ -29,6 +29,7 @@ class op_subject(osv.osv):
             'course_id': fields.many2one('op.course', string='Course'),
             'grade_waitage': fields.float(string='Grade Waitage'),
             'type': fields.selection([('p','Practial'),('t','Theory'),('pt','Both'),('o','Other')], string='Type', required=True),
+            'componente': fields.selection([('CS','Componente Sociocultural'),('CC','Componente Científica'),('CT','Componente Técnica')], string='Componentes de Formação', required=True),
     }
 
 op_subject()
